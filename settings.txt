@@ -1,0 +1,27 @@
+project-root/
+│
+├── .env                  # 환경 변수 파일 (DB 및 이메일 설정 등)
+├── .gitignore            # Git에서 제외할 파일 및 폴더
+├── package.json          # 프로젝트 및 의존성 정보
+├── package-lock.json     # 설치된 의존성의 버전 정보
+│
+├── src/                  # 백엔드 소스 코드 폴더
+│   ├── app.js            # Express 서버 설정 및 미들웨어 설정
+│   ├── config/           # 설정 관련 파일 폴더
+│   │   └── db.js         # 데이터베이스 연결 설정
+│   │
+│   ├── controllers/      # 각종 컨트롤러 폴더 (비즈니스 로직 처리)
+│   │   ├── bookController.js       # 책 관련 로직 (책 등록, 수정 등)
+│   │   └── notificationController.js # 알림 관련 로직 (이메일 알림 발송 등)
+│   │
+│   ├── models/           # 데이터베이스 모델 폴더
+│   │   └── bookModel.js          # 책 모델 (DB 테이블과의 인터페이스)
+│   │
+│   ├── routes/           # 라우트 설정 폴더
+│   │   ├── bookRoutes.js         # 책 관련 API 라우트
+│   │   └── notificationRoutes.js  # 알림 관련 API 라우트
+│   │
+│   └── utils/            # 유틸리티 함수 폴더
+│       └── emailSender.js        # Nodemailer 설정 및 이메일 전송 로직
+│
+└── README.md             # 프로젝트 설명서

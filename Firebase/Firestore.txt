@@ -1,0 +1,6 @@
+Firestore 구조:
+- users (컬렉션)
+  - userId (문서 ID)
+    - email: "user@example.com"
+    - is_notified: true
+    - fcm_token: "사용자_푸시_알림_토큰"
